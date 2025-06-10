@@ -1,0 +1,18 @@
+/* styles/base.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./reset.css";
+@import "./globals.css";
+@import "./themes/light.css";
+@import "./themes/dark.css";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

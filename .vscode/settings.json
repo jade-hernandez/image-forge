@@ -1,0 +1,88 @@
+{
+  // Monorepo-specific file exclusions
+  "files.exclude": {
+    "**/.turbo": true,
+    "**/.next": true,
+    "**/.swc": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/tsconfig.tsbuildinfo": true
+  },
+
+  "search.exclude": {
+    // Existing exclusions
+    "**/.turbo": true,
+    "**/.next": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/coverage": true,
+
+    // Additional build outputs and caches
+    "**/.swc": true,
+    "**/storybook-static": true,
+    "**/.storybook": true,
+    "**/__snapshots__": true,
+    "**/__image_snapshots__": true,
+    "**/tsconfig.tsbuildinfo": true,
+
+    // Test files when searching for implementation
+    "**/*.test.{js,jsx,ts,tsx}": true,
+    "**/*.spec.{js,jsx,ts,tsx}": true,
+    "**/vitest.config.*": true,
+    "**/playwright.config.*": true,
+
+    // Generated type definitions
+    "**/next-env.d.ts": true,
+
+    // Environment and configuration files when searching for code
+    "**/.env.*": true,
+    "**/tsconfig.json": true,
+    "**/postcss.config.*": true,
+    "**/tailwind.config.*": true,
+
+    // Package management
+    "**/pnpm-workspace.yaml": true,
+    "**/turbo.json": true,
+
+    // Temporary and OS files
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+
+  // Linting & Formatting
+  "prettier.configPath": ".prettierrc",
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto",
+      "directory": ["apps", "packages"]
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // TailwindCSS
+  "css.validate": false,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+
+  // File nesting
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.test.ts,${capture}.spec.ts",
+    "*.tsx": "${capture}.test.tsx,${capture}.spec.tsx,${capture}.styles.ts",
+    "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,turbo.json,.prettierrc,.eslintrc*,.env*"
+  }
+}

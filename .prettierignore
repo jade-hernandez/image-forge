@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+.next
+build
+dist
+.turbo
+
+# Testing
+coverage
+**/__snapshots__
+**/*.snap
+
+# Cache & Logs
+.cache
+*.log
+
+# Environment & Local files
+.env*
+.DS_Store
+
+# Generated files
+*.gen.*
+*.generated.*

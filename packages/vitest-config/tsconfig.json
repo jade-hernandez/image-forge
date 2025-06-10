@@ -1,0 +1,15 @@
+{
+  "extends": "@repo/typescript-config/base",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules"]
+}

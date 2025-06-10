@@ -1,0 +1,55 @@
+{
+  "name": "@repo/vitest-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./base": "./base.ts",
+    "./next": "./next.ts",
+    "./ui": "./ui.ts",
+    "./setup": "./setup.ts"
+  },
+  "files": [
+    "index.ts",
+    "index.d.ts",
+    "base.ts",
+    "base.d.ts",
+    "next.ts",
+    "next.d.ts",
+    "ui.ts",
+    "ui.d.ts",
+    "setup.ts",
+    "mocks/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "clean": "rm -rf .turbo node_modules dist",
+    "lint": "eslint .",
+    "format": "prettier --check \"**/*.{ts,tsx,md}\""
+  },
+  "peerDependencies": {
+    "vitest": "^3.0.6"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.2.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "@vitest/coverage-v8": "3.0.6",
+    "jsdom": "26.0.0",
+    "vite": "6.1.1",
+    "vite-tsconfig-paths": "5.1.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.13.4",
+    "eslint": "9.20.1",
+    "typescript": "5.7.3",
+    "vitest": "3.0.6"
+  }
+}

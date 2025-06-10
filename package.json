@@ -1,0 +1,34 @@
+{
+  "name": "image-forge",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:analyze": "turbo run build:analyze",
+    "dev": "turbo run dev",
+    "lint:check": "turbo run lint:check",
+    "lint:fix": "turbo run lint:fix",
+    "prettier:check": "turbo run prettier:check",
+    "prettier:fix": "turbo run prettier:fix",
+    "check-types": "turbo run check-types",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "clean": "turbo run clean"
+  },
+  "prettier": "@repo/prettier-config",
+  "eslintConfig": {
+    "extends": "@repo/eslint-config"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "prettier": "3.5.1",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "turbo": "2.4.2",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=20"
+  }
+}

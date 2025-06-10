@@ -1,0 +1,87 @@
+{
+  "folders": [
+    {
+      "name": "✨ root",
+      "path": ".",
+    },
+    {
+      "name": "📚 docs",
+      "path": "./docs",
+    },
+    {
+      "name": "📱 console",
+      "path": "./apps/console",
+    },
+    {
+      "name": "📱 docs",
+      "path": "./apps/docs",
+    },
+    {
+      "name": "📱 web",
+      "path": "./apps/web",
+    },
+    {
+      "name": "📦 ui",
+      "path": "./packages/ui",
+    },
+    {
+      "name": "📦 eslint-config",
+      "path": "./packages/eslint-config",
+    },
+    {
+      "name": "📦 prettier-config",
+      "path": "./packages/prettier-config",
+    },
+    {
+      "name": "📦 tailwind-config",
+      "path": "./packages/tailwind-config",
+    },
+    {
+      "name": "📦 typescript-config",
+      "path": "./packages/typescript-config",
+    },
+    {
+      "name": "📦 vitest-config",
+      "path": "./packages/vitest-config",
+    },
+
+    {
+      "name": "🛠️ boilerplate",
+      "path": "./apps/boilerplate",
+    },
+  ],
+  "settings": {
+    // TypeScript & Package Management
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "npm.packageManager": "pnpm",
+
+    // TailwindCSS
+    "tailwindCSS.includeLanguages": {
+      "typescript": "javascript",
+      "typescriptreact": "javascript",
+    },
+
+    // File Associations
+    "files.associations": {
+      "*.css": "tailwindcss",
+      ".env.*": "dotenv",
+      "turbo.json": "jsonc",
+    },
+
+    // Editor Config
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.formatDocument": "always",
+      "source.addMissingImports": "always",
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit",
+    },
+    "[typescript][javascript][typescriptreact][javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+    },
+  },
+}

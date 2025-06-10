@@ -1,0 +1,62 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalEnv": [
+    "NODE_ENV",
+    "ANALYZE",
+    "NEXT_PUBLIC_*",
+    "VERCEL_*",
+    "SUPABASE_SERVICE_ROLE_KEY"
+  ],
+  "globalDependencies": ["tsconfig.json", ".env*", "**/.env.*local"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "build:analyze": {
+      "dependsOn": ["build"],
+      "outputs": ["dist/**", ".next/**", ".analyze/**"]
+    },
+    "lint:check": {
+      "dependsOn": ["^build"],
+      "outputs": [".eslintcache", "eslint-results.json"],
+      "cache": true
+    },
+    "lint:fix": {
+      "dependsOn": ["^build"],
+      "outputs": ["**/eslint-results.json"]
+    },
+    "prettier:check": {
+      "dependsOn": ["^build"],
+      "outputs": ["**/prettier-results.json"]
+    },
+    "prettier:fix": {
+      "dependsOn": ["^build"],
+      "outputs": ["**/prettier-results.json"]
+    },
+    "format": {
+      "dependsOn": ["lint:fix", "prettier:fix"]
+    },
+    "check-types": {
+      "dependsOn": ["^build"],
+      "outputs": ["**/tsconfig.tsbuildinfo", ".turbo/turbo-typecheck.json"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "test:coverage": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}
