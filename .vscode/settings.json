@@ -65,12 +65,7 @@
       "directory": ["apps", "packages"]
     }
   ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
   // TailwindCSS
   "css.validate": false,
@@ -84,5 +79,11 @@
     "*.ts": "${capture}.test.ts,${capture}.spec.ts",
     "*.tsx": "${capture}.test.tsx,${capture}.spec.tsx,${capture}.styles.ts",
     "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,turbo.json,.prettierrc,.eslintrc*,.env*"
+  },
+
+  // Markdown linting - ignored rules
+  "markdownlint.config": {
+    "MD040": false, // Fenced code blocks should have a language specified
+    "MD041": false // First line in a file should be a top-level heading
   }
 }

@@ -9,6 +9,10 @@
       "path": "./docs",
     },
     {
+      "name": "🔄 cicd",
+      "path": "./.github",
+    },
+    {
       "name": "📱 console",
       "path": "./apps/console",
     },
