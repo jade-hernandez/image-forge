@@ -1,8 +1,25 @@
 {
   "extends": "@repo/typescript-config/base",
   "compilerOptions": {
+    // FIXME:
+    // This is a compromise to allow using `undefined` in optional properties
+    // This is coming from Shadcn UI components in @repo/ui
+    // This has been lifted to the base config
+    // Yet comment remains for clarity and future reference
+    // "exactOptionalPropertyTypes": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
     "jsx": "react-jsx"
   },
-  "include": ["*.{ts,tsx}", "*.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "components/**/*.{ts,tsx}",
+    "hooks/**/*.{ts,tsx}",
+    "lib/**/*.{ts,tsx}",
+    "styles/**/*.{ts,tsx}",
+    "index.ts",
+    "*.d.ts"
+  ],
+  "exclude": ["node_modules", "dist", "storybook-static"]
 }

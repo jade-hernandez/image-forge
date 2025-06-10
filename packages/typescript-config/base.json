@@ -16,7 +16,9 @@
     "strictBindCallApply": true,
     "useUnknownInCatchVariables": true,
     "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+
+    "exactOptionalPropertyTypes": false,
+
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
 

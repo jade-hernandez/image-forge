@@ -17,8 +17,8 @@
       "@/providers/*": ["src/providers/*"],
       "@/services/*": ["src/services/*"],
       "@/widgets/*": ["src/widgets/*"],
-      "@repo/ui": ["../../packages/ui/src"],
-      "@repo/ui/*": ["../../packages/ui/src/*"]
+      "@repo/ui": ["../../packages/ui"],
+      "@repo/ui/*": ["../../packages/ui/*"]
     }
   },
   "include": [
