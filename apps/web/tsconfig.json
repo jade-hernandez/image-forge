@@ -11,7 +11,9 @@
       "@/*": ["./src/*"],
       "@repo/ui": ["../../packages/ui"],
       "@repo/ui/*": ["../../packages/ui/*"]
-    }
+    },
+    // This is required (or added automatically) for Next.js to handle JavaScript files
+    "allowJs": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", ".next", "coverage"]
