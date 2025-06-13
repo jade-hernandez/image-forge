@@ -24,13 +24,13 @@ const MobileMenu = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant='ghost' size='icon' className='md:hidden'>
+        <Button variant='ghost' size='icon' className='lg:hidden'>
           <Menu className='h-6 w-6' />
           <span className='sr-only'>Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side='right' className='h-full min-w-[320px] px-4 py-8 sm:w-[480px]'>
-        <SheetHeader className='text-start'>
+      <SheetContent side='right' className='h-full min-w-[320px] p-8 sm:w-[480px]'>
+        <SheetHeader className='p-0 text-start'>
           <SheetTitle className='mb-2 text-2xl font-bold text-stone-900'>Menu</SheetTitle>
         </SheetHeader>
         <div className='flex h-full max-h-[calc(100dvh-104px)] flex-col justify-between'>

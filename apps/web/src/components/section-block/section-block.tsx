@@ -37,7 +37,7 @@ const SectionBlock = ({
   return (
     <section
       className={cn(
-        'mx-auto flex h-fit w-full flex-col items-center justify-center px-4 py-24 md:px-8',
+        'mx-auto flex h-fit w-full flex-col items-center justify-center px-8 py-24 md:px-12',
         backgroundColor
       )}
     >

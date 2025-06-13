@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
 
+import { Footer } from '@/layouts/footer/footer';
 import { Header } from '@/layouts/header/header';
 
 import './globals.css';
@@ -25,7 +26,7 @@ export default function RootLayout({
       <body className='select-none bg-stone-50 antialiased'>
         <Header />
         <main className='flex flex-col'>{children}</main>
-        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,38 +9,23 @@ import {
 
 import { NavListItem } from './nav-list-item';
 
-const navigationElements = [
-  {
-    title: 'Features',
-    href: '/features',
-  },
-  {
-    title: 'Pricing',
-    href: '/pricing',
-  },
-  {
-    title: 'Documentation',
-    href: '/docs',
-  },
-  {
-    title: 'Blog',
-    href: '/blog',
-  },
-];
+const navigationElements = ['Features', 'Pricing', 'Docs', 'Blog']; // Array - [0 -> 'Features', 1 -> 'Pricing', 2 -> 'Docs', 3 -> 'Blog']
+// const navigationElementsObject = {
+//   Features: 'Features',
+//   Pricing: 'Pricing',
+//   Docs: 'Docs',
+//   Blog: 'Blog',
+// }; // Object - Xnuf3080fhihs: { Features: 'Features', Pricing: 'Pricing', Docs: 'Docs', Blog: 'Blog' } -> This object is stored in memory with a unique reference in memory.
 
 const DesktopMenu = () => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className='hidden lg:flex'>
       <NavigationMenuList>
         {Object.entries(navigationElements).map(([key, element]) => (
           <NavigationMenuItem key={key}>
-            <NavigationMenuLink asChild>
-              <Link href={element.href}>
-                <NavigationMenuTrigger className='text-sm font-medium'>
-                  {element.title}
-                </NavigationMenuTrigger>
-              </Link>
-            </NavigationMenuLink>
+            <NavigationMenuTrigger className='bg-stone-50 text-sm font-medium hover:bg-stone-50'>
+              {element}
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <GoodSubMenuElementToKeep />
             </NavigationMenuContent>

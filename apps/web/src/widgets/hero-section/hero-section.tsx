@@ -41,12 +41,12 @@ const HeroSection = () => (
         <br />
         <span>{textData.en.description2}</span>
       </p>
-      <div className='flex w-full flex-col items-center justify-center space-y-4 sm:w-[372px] sm:flex-row sm:space-x-4 sm:space-y-0 lg:space-x-8'>
-        <Button variant='default' className='group w-full'>
+      <div className='flex w-full max-w-[372px] flex-col items-center justify-center space-y-4 md:w-full md:flex-row md:space-x-4 md:space-y-0 lg:space-x-8'>
+        <Button variant='default' className='group w-full md:max-w-[320px]'>
           {textData.en.button1}
           <ArrowRight className='group-hover:translate-x-1 group-hover:transition-transform group-hover:duration-200' />
         </Button>
-        <Button variant='outline' className='w-full'>
+        <Button variant='outline' className='w-full md:max-w-[320px]'>
           {textData.en.button2}
         </Button>
       </div>

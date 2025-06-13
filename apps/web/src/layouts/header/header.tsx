@@ -57,10 +57,10 @@ const Header = () => {
           <Globe className='h-6 w-6' />
           <span className='text-xl font-bold'>ImageForge</span>
         </Link>
-        <div className='hidden md:flex'>
-          <DesktopMenu />
-        </div>
-        <div className='hidden items-center space-x-4 md:flex'>
+
+        <DesktopMenu />
+
+        <div className='hidden items-center space-x-4 sm:flex'>
           <Button variant='outline' size='sm' className='min-w-[120px]'>
             Sign In
           </Button>
@@ -68,6 +68,7 @@ const Header = () => {
             Get Started
           </Button>
         </div>
+
         <MobileMenu />
       </div>
     </header>
