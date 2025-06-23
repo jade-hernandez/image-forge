@@ -25,6 +25,10 @@
       "path": "./apps/web",
     },
     {
+      "name": "📱 storefront",
+      "path": "./apps/storefront",
+    },
+    {
       "name": "📦 ui",
       "path": "./packages/ui",
     },
