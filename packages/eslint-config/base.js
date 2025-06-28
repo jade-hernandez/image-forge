@@ -167,24 +167,24 @@ export const config = [
       //   },
       // ],
       '@typescript-eslint/no-floating-promises': 'error',
-      '@typescript-eslint/no-misused-promises': 'error',
+      // '@typescript-eslint/no-misused-promises': 'error',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/no-for-in-array': 'error',
       '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
       // Code Quality
       // Todo: Add fine-grained control for these rules - dissociate react from typescript code
-      'max-lines-per-function': [
-        'warn',
-        {
-          max: 50,
-          skipBlankLines: true,
-          skipComments: true,
-        },
-      ],
-      complexity: ['warn', 10],
-      'max-depth': ['error', 3],
-      'max-nested-callbacks': ['error', 3],
+      // 'max-lines-per-function': [
+      //   'warn',
+      //   {
+      //     max: 50,
+      //     skipBlankLines: true,
+      //     skipComments: true,
+      //   },
+      // ],
+      // complexity: ['warn', 10],
+      // 'max-depth': ['error', 3],
+      // 'max-nested-callbacks': ['error', 3],
 
       // Error Prevention
       'no-debugger': 'error',

@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@next/eslint-plugin-next':
+        specifier: 15.1.7
+        version: 15.1.7
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
@@ -17,6 +20,24 @@ importers:
       '@trivago/prettier-plugin-sort-imports':
         specifier: 5.2.2
         version: 5.2.2(prettier@3.5.1)
+      '@typescript-eslint/eslint-plugin':
+        specifier: 8.24.1
+        version: 8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3))(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3)
+      '@typescript-eslint/parser':
+        specifier: 8.24.1
+        version: 8.24.1(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3)
+      eslint:
+        specifier: 9.20.1
+        version: 9.20.1(jiti@1.21.7)
+      eslint-plugin-jsx-a11y:
+        specifier: 6.7.1
+        version: 6.7.1(eslint@9.20.1(jiti@1.21.7))
+      eslint-plugin-react:
+        specifier: 7.35.2
+        version: 7.35.2(eslint@9.20.1(jiti@1.21.7))
+      eslint-plugin-react-hooks:
+        specifier: 5.0.0
+        version: 5.0.0(eslint@9.20.1(jiti@1.21.7))
       prettier:
         specifier: 3.5.1
         version: 3.5.1

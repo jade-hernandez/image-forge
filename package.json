@@ -19,9 +19,16 @@
     "extends": "@repo/eslint-config"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "15.1.7",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/prettier-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "8.24.1",
+    "@typescript-eslint/parser": "8.24.1",
+    "eslint": "9.20.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.35.2",
+    "eslint-plugin-react-hooks": "5.0.0",
     "prettier": "3.5.1",
     "prettier-plugin-tailwindcss": "0.6.11",
     "turbo": "2.4.2",

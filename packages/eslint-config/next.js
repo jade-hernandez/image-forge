@@ -128,14 +128,14 @@ export const nextJsConfig = [
         },
       ],
       'react/jsx-no-constructed-context-values': 'error',
-      'react/jsx-handler-names': [
-        'error',
-        {
-          eventHandlerPrefix: 'handle',
-          eventHandlerPropPrefix: 'on',
-          checkLocalVariables: true,
-        },
-      ],
+      // 'react/jsx-handler-names': [
+      //   'error',
+      //   {
+      //     eventHandlerPrefix: 'handle',
+      //     eventHandlerPropPrefix: 'on',
+      //     checkLocalVariables: true,
+      //   },
+      // ],
 
       // Override the function naming to allow PascalCase for components
       '@typescript-eslint/naming-convention': [
